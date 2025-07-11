@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Propscore</title>
+  <link rel="stylesheet" href="Web2.css" />
+  
+</head>
+<body>
+  
+  <header>
+    <!-- <nav>
+        <h1>
+      <span class="orange">Prop</span><span class="black">Score</span>
+      </h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Get Scored</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> -->
+    <div class="hero" id="hero-section">
+      <img src="backgroung.jpg" width="100%" alt="Inspector" class="hero-img" />
+    <div class="task-bar">
+    <div class="top-left"> 
+         <h1>
+      <span class="orange">Prop</span><span class="black">Score</span>
+         </h1>
+       </div>
+       
+
+       <div class=" top-right">
+        <ul class="nav-links">
+          <li><a class="home" href="#" >Home</a></li>
+          <li><a class="about" href="about.html">About</a></li >
+          <li><a class="services" href="#">Projects</a></li>
+          <li><a class="get" href="#">News</a></li>
+          <li><a class="contact" href="#">Contact</a></li>
+       
+      </ul>
+       </div>
+       <div class="Search-bar">
+          <input type="text" id="mainSearchBar" placeholder="Search your city here..." />
+        </div>
+
+        <div class="auth-buttons">
+          <button class="login-btn">Sign Up</button>
+          <button class="signup-btn">Login</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ✅ Overlay that appears on search -->
+  <div id="searchOverlay" class="overlay">
+    <div class="search-box">
+      
+      <input type="text" id="districtSearch" placeholder="Type district name...">
+      <ul id="districtList" class="dropdown-list"></ul>
+
+      <h1>Select Type</h1>
+      <div class="image-grid">
+        <div class="image-card" data-type="Residential">
+          <img src="Images/Residential Building.jpg" alt="Residential Building" />
+          <div class="label">Residential Building</div>
+        </div>
+        <div class="image-card" data-type="Commercial">
+          <img src="commertial building.jpg" alt="Commercial Building" />
+          <div class="label">Commercial Building</div>
+        </div>
+        <div class="image-card" data-type="Bungalow">
+          <img src="Images/house1.jpeg" alt="Bungalow" />
+          <div class="label">Bungalow</div>
+        </div>
+        <div class="image-card" data-type="FarmLand">
+          <img src="Images/land.jpeg" alt="Farmland" />
+          <div class="label">FarmLand</div>
+        </div>
+      </div>
+
+      <button id="goBtn" disabled>Go</button>
+      <button id="closeSearch" class="close-btn">✖</button>
+    </div>
+  </div>
+
+  <!-- ✅ Script to toggle -->
+  <script>
+    const overlay = document.getElementById('searchOverlay');
+    const mainSearchBar = document.getElementById('mainSearchBar');
+    const closeBtn = document.getElementById('closeSearch');
+
+    mainSearchBar.addEventListener('focus', () => {
+      overlay.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    });
+  </script>
+
+      
+      
+       <!-- <div class="aa">
+           <h3> Get a Trusted Property Score</h3>
+       </div> -->
+    
+  </header>
+<!-- 
+  <section class="scores">
+    <div class="score-card">
+      <h3>Green Energy</h3>
+      <p class="score">82</p>
+    </div>
+    <div class="score-card">
+      <h3>Structure</h3>
+      <p class="score">76</p>
+    </div>
+    <div class="score-card">
+      <h3>Safety</h3>
+      <p class="score">80</p>
+    </div>
+  </section> -->
+
+  <section class="choose">
+    
+     <div class="image-grid">
+  <div class="image-card">
+   <a href="#"><img src="Images/Residential Building.jpg" alt="Residential Building"></a> 
+    <div class="label">Residential Building</div>
+  </div>
+  <div class="image-card">
+   <a href="#"> <img src="commertial building.jpg" alt="Commercial Building"></a> 
+    <div class="label">Comertial Building</div>
+  </div>
+  <div class="image-card">
+    <a href="#"><img src="Images/house1.jpeg" alt="Bungalow"></a> 
+   <div class="label">Bungalow</div>
+  </div>
+  <div class="image-card">
+    <a href="#"><img src="Images/land.jpeg" alt="Farmland"></a> 
+    <div class="label">FarmLand</div>
+  </div>
+</div>
+
+     
+ 
+       
+
+    
+
+
+
+
+
+
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <p>Learn about the scoring process for your building</p>
+    <div class="steps">
+      <div class="step">
+        <img src="Images/inspection.webp" alt="Inspection" />
+        <p>Inspection</p>
+      </div>
+      <div class="step">
+        <img src="Images/score.webp" alt="Scoring" />
+        <p>Scoring</p>
+      </div>
+    </div>
+  </section>
+   
+  <footer>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>info@propscore.com</p>
+
+
+  </footer>
+</body>
+</html>
